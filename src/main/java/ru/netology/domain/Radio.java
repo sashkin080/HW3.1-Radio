@@ -12,7 +12,7 @@ public class Radio {
         if (currentRadioStation < maxRadioStationNumber) {
             currentRadioStation = currentRadioStation + 1;
         } else{
-            currentRadioStation = 0;
+            currentRadioStation = minRadioStationNumber;
         }
     }
 
@@ -20,7 +20,7 @@ public class Radio {
         if (currentRadioStation > minRadioStationNumber) {
             this.currentRadioStation = currentRadioStation - 1;
         }else {
-            currentRadioStation = 9;
+            currentRadioStation = maxRadioStationNumber;
         }
     }
 
