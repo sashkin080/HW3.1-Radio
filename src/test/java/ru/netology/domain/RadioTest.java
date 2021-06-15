@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class RadioTest {
 
     @Test
-    public void SelectingTheNumberOfRadioStations() {
+    public void selectingTheNumberOfRadioStations() {
         Radio radio = new Radio(
                 5, 55
         );
@@ -52,7 +52,7 @@ class RadioTest {
         int currentRadioStation = 1;
         int expected = 0;
         radio.setCurrentRadioStation(currentRadioStation);
-        radio.MinRadioStationNumber();
+        radio.minRadioStationNumber();
         assertEquals(expected, radio.getCurrentRadioStation());
     }
 
@@ -62,7 +62,7 @@ class RadioTest {
         int currentRadioStation = 0;
         int expected = 10;
         radio.setCurrentRadioStation(currentRadioStation);
-        radio.MinRadioStationNumber();
+        radio.minRadioStationNumber();
         assertEquals(expected, radio.getCurrentRadioStation());
     }
 
@@ -72,7 +72,7 @@ class RadioTest {
         int currentRadioStation = 9;
         int expected = 8;
         radio.setCurrentRadioStation(currentRadioStation);
-        radio.MinRadioStationNumber();
+        radio.minRadioStationNumber();
         assertEquals(expected, radio.getCurrentRadioStation());
     }
 
